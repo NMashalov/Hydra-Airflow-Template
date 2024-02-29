@@ -1,0 +1,7 @@
+defaults:
+  - default
+
+actions:
+  - extract:
+    sql:
+      source_table: prod_edu.books

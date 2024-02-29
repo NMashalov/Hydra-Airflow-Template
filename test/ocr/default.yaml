@@ -1,0 +1,24 @@
+dag:
+  dag_id: scoring
+  tags:
+    - bam
+    - ham
+  resource: cpu
+  notification: mashalov.ne@gmail.com
+actions:
+  - extract:
+    sql:
+      action_type: SqlToCsv
+      source_table: edu.books
+  - transform:
+    process:
+      action_type: Score
+      image: python3.11
+      cli: tesseract-ocr
+  - load:
+      action_type: 
+
+      
+    
+
+    
