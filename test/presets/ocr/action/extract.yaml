@@ -1,0 +1,3 @@
+sql:
+  action_type: SQLToCsv
+  source_table: edu.books

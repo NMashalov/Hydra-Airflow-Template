@@ -1,0 +1,9 @@
+defaults:
+  - default  
+
+action:
+  extract:
+    sql:
+      source_table: prod.literature
+    s3:
+      bucket: prod

@@ -1,0 +1,15 @@
+preset:
+  dag:
+    notification: True
+  actions:
+    - extract:
+        sql:
+          action_type: SQLToCsv
+          source_table: edu.books
+    - transform:
+        process:
+          action_type: Score
+    - extract:
+        process:
+          action_type: CsvToSQL
+    

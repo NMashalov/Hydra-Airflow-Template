@@ -1,0 +1,6 @@
+dag_id: scoring
+tags:
+  - bam
+  - ham
+resource: cpu
+notification: mashalov.ne@gmail.com

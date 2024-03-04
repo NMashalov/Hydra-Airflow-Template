@@ -1,0 +1,3 @@
+defaults:
+  - dag: base
+  - action: [extract,transform,load]  

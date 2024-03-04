@@ -1,0 +1,4 @@
+process:
+  action: Score
+  image: python3.11
+  cli: tesseract-ocrss
